@@ -15,7 +15,6 @@ public class Bill {
     /*
      * Getters et setters
      */
-
     public int getTable() {
         return table;
     }

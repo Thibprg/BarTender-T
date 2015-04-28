@@ -32,6 +32,10 @@ public class Drink extends Object{
         this.icon = icon;
     }
 
+
+   /*
+    * getters et setters
+    */
     public char getName() {
         return name;
     }
@@ -103,8 +107,8 @@ public class Drink extends Object{
     }
 
     /*
-             * methode de Drink
-             */
+     * methode de Drink
+     */
     public double getAverage()
     {
         return 0.0;

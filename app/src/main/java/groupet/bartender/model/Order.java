@@ -5,7 +5,28 @@ package groupet.bartender.model;
  */
 public class Order {
     int table;
-    Object drink_list;
+    Drink drink_list;
+
+    public Order(int table, Drink drink_list) {
+        this.table = table;
+        this.drink_list = drink_list;
+    }
+
+    /*
+     *  getters et setters
+     */
+    public int getTable() {
+        return table;
+    }
+    public void setTable(int table) {
+        this.table = table;
+    }
+    public Drink getDrink_list() {
+        return drink_list;
+    }
+    public void setDrink_list(Drink drink_list) {
+        this.drink_list = drink_list;
+    }
 
     /*
      * methodes de la classe Order

@@ -8,12 +8,17 @@ public class Waiter extends  User{
     String password;
 
 
+    public Waiter(String username, String password) {
+        super(username, password);
+    }
+
     /*
      * methodes de la classe Waiter
      */
     private Order initOrder(int table_num)
     {
-        Order com1 = new Order();
+        Drink dr = new Drink('1',0,0,0,0,0,0.0,0.0,"000","000","000","icon");
+        Order com1 = new Order(1, dr);
         return com1;
     }
     private Bill initBill(int table_num)
