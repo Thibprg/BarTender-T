@@ -28,9 +28,14 @@ public class Bill {
         this.total = total;
     }
 
+    //toString
+    public String toString() {
+        return "addition de la table n°" + table + ",           total=" + total +'}';
+    }
+
     /*
-     * Methodes de la classe Bill
-     */
+         * Methodes de la classe Bill
+         */
     public void print()
     {}
     public void close()

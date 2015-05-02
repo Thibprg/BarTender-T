@@ -5,9 +5,9 @@ package groupet.bartender.model;
  */
 public class Order {
     int table;
-    Drink drink_list;
+    Drink drink_list[];
 
-    public Order(int table, Drink drink_list) {
+    public Order(int table, Drink drink_list[]) {
         this.table = table;
         this.drink_list = drink_list;
     }

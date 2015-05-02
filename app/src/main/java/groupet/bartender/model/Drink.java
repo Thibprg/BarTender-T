@@ -6,6 +6,7 @@ package groupet.bartender.model;
 public class Drink extends Object{
     char name;
     int id;
+    int numbersOfVotes;
     int availableQuantity;
     int volume;
     int stockMax;
@@ -109,8 +110,17 @@ public class Drink extends Object{
     /*
      * methode de Drink
      */
-    public double getAverage()
-    {
-        return 0.0;
+
+    /*
+     * calcule un nouvelle moyenne a la boisson en fonction de la nouvelle note donnée.
+     */
+    public void newAverage(int vote) {
+        double newAverage = (((this.average)*((double) numbersOfVotes)) + (double) vote) / ((double) numbersOfVotes+1.0);
+    }
+    /*
+     * ajoute l'avis a la suite de celle de la boisson
+     */
+    public void addComment(String newComment) {
+        //TODO louis
     }
 }
